@@ -6,9 +6,11 @@ The follow commands were used to bootstrap the environment
 $ sudo apt-get update
 $ sudo apt install curl
 $ sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-$ sudo apt install tsc
+$ bash
+$ nvm install 22
+$ npm install -g typescript
 $ sudo apt install node-typescript
-$ sudo apt install cdk
+$ npm install -g aws-cdk
 ```
 
 Docker was installed following the guidance here, [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/).
