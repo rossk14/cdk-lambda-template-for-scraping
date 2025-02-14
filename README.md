@@ -10,17 +10,22 @@ $ bash
 $ nvm install 22
 $ npm install -g typescript
 $ sudo apt install node-typescript
+$ sudo apt install zip
 $ npm install -g aws-cdk
 ```
 
 Docker was installed following the guidance here, [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/).
 
 ## Building and deploying
-`$ npm i`
-`$ npm run build:lambda`
-`$ npm run cdk:synth`
-`$ npm run cdk:bootstrap`
-`$ npm run cdk:deploy`
+
+Update the AWS Account Number in cdk-lambda-template-for-scraping-project.ts and make sure your AWS credentials are configured in the terminal before running the following commands
+```
+ $ npm i
+ $ npm run build:lambda
+ $ npm run cdk:synth
+ $ npm run cdk:bootstrap
+ $ npm run cdk:deploy
+```
 
 ## Features
 ### Base
