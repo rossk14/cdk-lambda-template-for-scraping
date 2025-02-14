@@ -1,0 +1,30 @@
+{
+  "name": "notification-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "module": "true",
+  "scripts": {
+    "local:execute": "npx ts-node -e \"console.log(require('./handler.ts').handler());\"",
+    "test": "jest --coverage",
+    "prebuild": "rm -rf ./dist && mkdir dist",
+    "build": "tsc",
+    "publish": "npm prune --omit=dev --production && cp -r node_modules ./.build && cd ./.build && zip -r ../dist/lambda.zip .",
+    "clean": "rm -rf ./dist && rm -rf ./.build && rm -rf ./coverage"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.743.0",
+    "@aws-sdk/client-sns": "^3.743.0",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "puppeteer": "21.5.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@sparticuz/chromium-min": "119.0.2",
+    "puppeteer-core": "21.5.0",
+    "cheerio": "^1.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+*.ts
+!*.d.ts
+
+assets
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
