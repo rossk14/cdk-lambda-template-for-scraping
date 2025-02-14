@@ -5,7 +5,7 @@ The follow commands were used to bootstrap the environment
 ```
 $ sudo apt-get update
 $ sudo apt install curl
-$ sudo apt install nvm
+$ sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 $ sudo apt install tsc
 $ sudo apt install node-typescript
 $ sudo apt install cdk
